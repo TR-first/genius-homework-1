@@ -1,0 +1,224 @@
+@font-face {
+  font-display: swap;
+  font-family: "Play";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/play-v17-cyrillic_latin-regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Play";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/play-v17-cyrillic_latin-700.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 100;
+  src: url("../fonts/roboto-v30-cyrillic_latin-100.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/roboto-v30-cyrillic_latin-300.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/roboto-v30-cyrillic_latin-regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/roboto-v30-cyrillic_latin-500.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/roboto-v30-cyrillic_latin-700.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/roboto-v30-cyrillic_latin-900.woff2") format("woff2");
+}
+
+:root {
+  --color-primary-dark: #011c44;
+  --color-primary-light: #2b7fff;
+  --color-primary-white: #ffffff;
+  --color-primary-black: #000000;
+  --color-secondary-4A4A4A: #4a4a4a;
+  --color-secondary-747272: #747272;
+  --color-secondary-011F4A: #011f4a;
+  --color-secondary-FFD02B: #ffd02b;
+}
+
+/*Base*/
+body {
+  color: var(--color-primary-dark);
+  font-size: 18px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.17;
+}
+ul {
+  list-style-type: none;
+}
+h1,
+h2 {
+  font-family: "Play";
+}
+
+/*Button*/
+.button {
+  color: var(--color-primary-white);
+  background-color: var(--color-primary-light);
+  border-style: none;
+  border-radius: 32px;
+  cursor: pointer;
+  font-weight: 600;
+}
+.button:hover {
+  color: var(--color-primary-dark);
+  background-color: transparent;
+  border: 2px solid var(--color-primary-light);
+  border-radius: 32px;
+}
+
+/*Header*/
+.header {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(5px);
+}
+
+/*Link*/
+.link {
+  color: var(--color-primary-dark);
+  text-decoration: none;
+}
+.main-link {
+  color: var(--color-primary-light);
+  font-weight: 700;
+}
+.link:hover {
+  color: var(--color-primary-light);
+}
+
+/*Hero section*/
+.hero-section__title {
+  color: var(--color-primary-light);
+  font-size: 140px;
+  font-weight: 700;
+  line-height: 0.8;
+  text-transform: capitalize;
+}
+.hero-section__text {
+  font-size: 12px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+/*sections*/
+.section__title {
+  color: var(--color-primary-dark);
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1.16;
+}
+.section__title .accent {
+  color: var(--color-primary-light);
+}
+.capitalize {
+  text-transform: capitalize;
+}
+
+/*About section*/
+.about-section__text {
+  font-size: 22px;
+  line-height: 1.7;
+}
+
+.about-section__text span {
+  font-weight: 600;
+}
+
+/*Why section*/
+.why-section__item {
+  color: var(--color-primary-black);
+}
+.why-section {
+  text-align: center;
+}
+
+/*Procedures section*/
+.procedures-section__item {
+  color: var(--color-primary-white);
+  font-size: 22px;
+  line-height: 1.18;
+  text-align: center;
+}
+.procedures-section {
+  text-align: center;
+}
+
+/*Contact section*/
+.contact-section {
+  text-align: center;
+}
+.contact-section__form {
+  color: var(--color-primary-white);
+  background-color: var(--color-primary-dark);
+}
+.contact-section__form span {
+  color: var(--color-primary-light);
+}
+.form-terms {
+  color: var(--color-secondary-747272);
+}
+.form-terms__link {
+  color: var(--color-secondary-747272);
+  text-decoration: none;
+}
+
+/*Footer*/
+.footer {
+  background-color: var(--color-primary-dark);
+  color: var(--color-primary-white);
+  font-size: 16px;
+  line-height: 1.19;
+}
+.footer .link {
+  color: var(--color-primary-white);
+}
+.footer__address-link {
+  color: var(--color-primary-white);
+  text-decoration: none;
+  font-style: normal;
+}
+.footer__address-copyright {
+  color: var(--color-secondary-747272);
+  font-size: 13px;
+  text-decoration: none; 
+  line-height: 1.15;
+}
